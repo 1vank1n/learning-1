@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>...</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+
+	<body>
+		<div class="app-container">
+			<div class="css-root">
+				<h1 class="css-planet-monitor">Obi-Wan currently on Tatooine</h1>
+
+				<section class="css-scrollable-list">
+					<ul class="css-slots">
+						<li class="css-slot"></li>
+						<li class="css-slot"></li>
+						<li class="css-slot"></li>
+						<li class="css-slot"></li>
+						<li class="css-slot"></li>
+					</ul>
+
+					<div class="css-scroll-buttons">
+						<button class="css-button-up"></button>
+						<button class="css-button-down"></button>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/template" id="sith-view">
+		<h3><%= name %></h3>
+		<h6><%= homeworld.name %></h6>
+	</script>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/backbone-min.js"></script>
+
+	<script src="app/homeworld/models.js"></script>
+	<script src="app/sith/models.js"></script>
+	<script src="app/sith/collections.js"></script>
+	<script src="app/sith/views.js"></script>
+	<script src="app/router.js"></script>
+
+</html>
